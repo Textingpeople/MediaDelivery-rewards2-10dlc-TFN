@@ -22,22 +22,13 @@ export const metadata: Metadata = {
     description: "Perks Plus Hub is an employee perks hub where employees see, track and use the perks their employer offers.",
     url: "https://perksplushub.com",
     siteName: "Perks Plus Hub",
-    images: [
-      {
-        url: "/logo.png",
-        width: 1200,
-        height: 630,
-        alt: "Perks Plus Hub — Your Employee Perks in One Place",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Perks Plus Hub — Your Employee Perks in One Place",
     description: "See, track and use the perks your employer offers, all in one place.",
-    images: ["/logo.png"],
   },
   robots: {
     index: true,
