@@ -2,13 +2,16 @@
 
 :root {
   --background: #FFFFFF;
-  --foreground: #1A1A1A;
-  --primary: #EFE810;
-  --primary-hover: #d4cd00;
-  --accent-soft: #F5F2C8;
-  --bg-light: #F9F9F9;
-  --text-headline: #1A1A1A;
-  --text-body: #555555;
+  --foreground: #111827;
+  --primary: #1E40AF;
+  --primary-hover: #1E3A8A;
+  --secondary: #7C3AED;
+  --secondary-hover: #6D28D9;
+  --accent: #F97316;
+  --accent-soft: #EEF2FF;
+  --bg-light: #F9FAFB;
+  --text-headline: #111827;
+  --text-body: #4B5563;
 }
 
 @theme inline {
@@ -16,6 +19,9 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
   --color-bg-light: var(--bg-light);
   --color-text-headline: var(--text-headline);
@@ -27,7 +33,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #FFFFFF;
-    --foreground: #1A1A1A;
+    --foreground: #111827;
   }
 }
 
@@ -39,9 +45,9 @@ body {
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(239, 232, 16, 0.4), 0 0 40px rgba(239, 232, 16, 0.2);
+    box-shadow: 0 0 20px rgba(30, 64, 175, 0.4), 0 0 40px rgba(30, 64, 175, 0.2);
   }
   50% {
-    box-shadow: 0 0 30px rgba(239, 232, 16, 0.6), 0 0 60px rgba(239, 232, 16, 0.3);
+    box-shadow: 0 0 30px rgba(30, 64, 175, 0.6), 0 0 60px rgba(30, 64, 175, 0.3);
   }
 }

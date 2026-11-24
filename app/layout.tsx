@@ -13,20 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PerksPlus — Employee Engagement Platform",
-  description: "Recognize effort, reward performance, and build a culture people love. PerksPlus is the employee engagement platform that drives real recognition, reduces turnover, and keeps your team motivated.",
-  keywords: "employee perks, employee benefits, workplace perks, team rewards, HR benefits platform",
+  metadataBase: new URL("https://perksplushub.com"),
+  title: "Perks Plus Hub — Your Employee Perks in One Place",
+  description: "Perks Plus Hub is an employee perks hub where employees see, track and use the perks their employer offers.",
+  keywords: "employee perks, employee benefits, workplace perks, perks hub, perk reminders, team kudos wall",
   openGraph: {
-    title: "PerksPlus — Employee Engagement Platform",
-    description: "Recognize effort, reward performance, and build a culture people love. The employee engagement platform that drives real recognition and reduces turnover.",
-    url: "https://tryperksplus.com",
-    siteName: "PerksPlus",
+    title: "Perks Plus Hub — Your Employee Perks in One Place",
+    description: "Perks Plus Hub is an employee perks hub where employees see, track and use the perks their employer offers.",
+    url: "https://perksplushub.com",
+    siteName: "Perks Plus Hub",
     images: [
       {
         url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "PerksPlus — Employee Engagement Platform",
+        alt: "Perks Plus Hub — Your Employee Perks in One Place",
       },
     ],
     locale: "en_US",
@@ -34,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PerksPlus — Employee Engagement Platform",
-    description: "Recognize effort, reward performance, and build a culture people love.",
+    title: "Perks Plus Hub — Your Employee Perks in One Place",
+    description: "See, track and use the perks your employer offers, all in one place.",
     images: ["/logo.png"],
   },
   robots: {
@@ -56,20 +57,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLGG52GZ09"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-YLGG52GZ09');
-            `,
-          }}
-        />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
